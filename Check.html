@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<!--
+	Theory by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Shadow Labs</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="author" content="David Hoerz">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script>
+			function checkPassword() {
+				var password = document.getElementById("passwordBox");
+				var passwordText = password.value;
+				if(passwordText == "ShadowLabs") {
+					alert("Du hast das Spiel geschlagen, BRAVO!")
+					return true;
+				}
+				alert("Gewinne das Spiel und versuche es nochmal.");
+				return false;
+			}
+		</script>
+	</head>
+	<body class="subpage">
+	
+		<!-- Header -->
+	<header id="header">
+			<div class="inner">
+				<nav id="nav">
+					<a href="Main.html" class="align-center">Zurück</a>
+				</nav>
+				<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+			</div>
+		</header>
+		<h2 class="align-center">Vertraulich</h2>
+		<p class="align-center">Passwort benötigt:<input id="passwordBox" type="password"></p>
+		<a href="generic.html" class="button special" onclick="return checkPassword();">Weiter</a>
+	</body>
+</html>
